@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+header .title,
+header .subtitle {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+header .subtitle {
+  max-width: 200px;
+}
+
+main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+img.mario {
+  display: none;
+  max-width: 300px;
+  margin: 0 0 60px 0;
+}
+
+@media (min-width: 768px) {
+  img.mario {
+    display: block;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 4px;
+  margin: 0 auto;
+  background: lightgray;
+  border-radius: 10px;
+}
+
+.grid img {
+  max-width: 200px;
+  width: calc(25% - 8px);
+  height: auto;
+  margin: 4px;
+}
